@@ -101,6 +101,23 @@
           Category: <span id="bmiCategory">--</span>
         </p>
         <p id="healthTip" class="result__tip"></p>
+        <div class="analysis">
+          <h3>WHO Health Analysis</h3>
+          <p id="whoRange" class="analysis__line"></p>
+          <p id="riskLevel" class="analysis__line"></p>
+          <p id="recommendation" class="analysis__line"></p>
+        </div>
+
+        <details class="ai-panel">
+          <summary>AI Smart Analysis (Optional)</summary>
+          <p class="ai-panel__note">
+            Generate personalized coaching text through a secure backend endpoint.
+            No API key is exposed in the browser.
+          </p>
+          <button id="aiAnalyzeBtn" class="btn btn--secondary">Generate AI Insight</button>
+          <p id="aiStatus" class="message" role="status"></p>
+          <pre id="aiOutput" class="ai-output hidden"></pre>
+        </details>
       </section>
 
       <section class="banner-ad" aria-label="Banner Ad Placeholder">

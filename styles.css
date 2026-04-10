@@ -114,6 +114,14 @@ body {
   background: var(--primary-dark);
 }
 
+.btn--secondary {
+  background: #2d6cdf;
+}
+
+.btn--secondary:hover {
+  background: #1f56ba;
+}
+
 .btn--small {
   margin-top: 0.6rem;
   width: auto;
@@ -156,6 +164,50 @@ body {
   margin: 0.45rem 0 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.analysis {
+  margin-top: 0.8rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e3ece8;
+}
+
+.analysis h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.analysis__line {
+  margin: 0.2rem 0;
+  color: var(--muted);
+}
+
+.ai-panel {
+  margin-top: 0.85rem;
+  border-top: 1px solid #e3ece8;
+  padding-top: 0.75rem;
+}
+
+.ai-panel summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ai-panel__note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ai-output {
+  margin-top: 0.65rem;
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  background: #f7faf9;
+  border: 1px solid #d8e6e0;
+  border-radius: 10px;
+  padding: 0.75rem;
 }
 
 .category-underweight {
