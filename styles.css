@@ -1,0 +1,215 @@
+:root {
+  --bg: #f3f8f6;
+  --card: #ffffff;
+  --text: #14332a;
+  --muted: #56756c;
+  --primary: #1b8a5a;
+  --primary-dark: #136342;
+  --danger: #b42318;
+  --warning: #b54708;
+  --underweight: #2f6fbf;
+  --normal: #1b8a5a;
+  --overweight: #d9822b;
+  --obese: #b42318;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 460px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1rem 1rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.app__header p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 7%);
+}
+
+.toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.toggle__btn {
+  padding: 0.65rem;
+  border: 1px solid #c9ded7;
+  background: #eff8f4;
+  color: var(--text);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.toggle__btn.is-active {
+  background: #d5f3e6;
+  border-color: #6ac59c;
+}
+
+.fields {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.field input {
+  width: 100%;
+  padding: 0.68rem 0.72rem;
+  border: 1px solid #c9ded7;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn {
+  margin-top: 0.95rem;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn--small {
+  margin-top: 0.6rem;
+  width: auto;
+  min-width: 110px;
+}
+
+.message {
+  min-height: 1.2rem;
+  margin: 0.65rem 0 0;
+  font-size: 0.92rem;
+}
+
+.message.error {
+  color: var(--danger);
+}
+
+.message.warn {
+  color: var(--warning);
+}
+
+.message.ok {
+  color: var(--normal);
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+.result__bmi {
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.result__category {
+  margin: 0.35rem 0;
+  font-weight: 600;
+}
+
+.result__tip {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.category-underweight {
+  color: var(--underweight);
+}
+
+.category-normal {
+  color: var(--normal);
+}
+
+.category-overweight {
+  color: var(--overweight);
+}
+
+.category-obese {
+  color: var(--obese);
+}
+
+.banner-ad {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  background: #e7f2ee;
+  border-top: 1px solid #c5ddd5;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.interstitial {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 45%);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.interstitial__content {
+  width: min(360px, 100%);
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 20%);
+}
+
+.interstitial__content h3 {
+  margin: 0.15rem 0 0.4rem;
+}
+
+.hidden {
+  display: none;
+}
